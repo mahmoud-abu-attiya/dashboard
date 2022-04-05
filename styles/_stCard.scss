@@ -1,0 +1,36 @@
+.st-cards{
+  height: fit-content;
+  .st-card{
+    font-size: 11px;
+    height: fit-content;
+    background-color: $primarycolor;
+    display: flex;
+    border-radius:10px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+  .st-card-info{
+    font-weight: bold;
+      .title{
+    
+      }
+      .valu{
+        display: inline-block;
+        font-size: clamp(15px,1.5vw,18px);
+      }
+      .percent{
+        color: green;
+        margin-left: 5px;
+      }
+    }
+    .st-card-icon{
+      background-color: #daba01;
+      padding: 10px;
+      border-radius: 10px;
+      color: $primarycolor;
+      @media (max-width:$tapletmedia) {
+        padding: 7px;
+      }
+    }
+  }
+}

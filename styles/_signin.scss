@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap");
 
 .singin {
   display: flex;
@@ -35,7 +34,7 @@
       align-items: center;
       width: 70%;
       transition: 0.3s;
-      @media (max-width: 767px) {
+      @media (max-width: $mobilemedia) {
         display: none;
         z-index: -3;
         opacity: 0;
@@ -86,7 +85,7 @@
     .vis {
       display: block;
     }
-    @media (max-width: 767px) {
+    @media (max-width: $mobilemedia) {
       .media-bars {
         display: block;
       }
@@ -102,7 +101,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    @media (max-width: 767px) {
+    @media (max-width: $mobilemedia) {
       display: none;
     }
   }
@@ -113,7 +112,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @media (max-width: 767px) {
+    @media (max-width: $mobilemedia) {
       width: 100%;
     }
     form {

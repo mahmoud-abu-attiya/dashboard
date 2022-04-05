@@ -1,5 +1,7 @@
 import Head from 'next/head'
-import Link from 'next/link'
+// import Link from 'next/link'
+import { Sidebar } from '../components/dashboard/Sidebar'
+import Content from '../components/dashboard/Content'
 // import { signIn } from './signIn'
 
 export default function Home() {
@@ -11,8 +13,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1>mahmoud</h1>
-      <Link href="/signIn">goo</Link>
+        <div className="layers">
+          <Sidebar />
+          <Content />
+        </div>
     </>
   )
 }

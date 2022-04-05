@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap");
+$primarycolor :#313259;
+$secondcolor  :#4051b5;
+$yellowcolor  : #daba01;
+$mobilemedia  : 767px;
+$tapletmedia  : 967px;
 *{
   box-sizing: border-box;
   padding: 0;
@@ -6,12 +12,15 @@
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 body{
-  color: #000;
+  color: #fff;
   background-color: #090a32;
 }
 input,button{
   outline: none;
   border: none;
+}
+button{
+  cursor: pointer;
 }
 a{
   color: #fff !important;
@@ -19,4 +28,9 @@ a{
   cursor: pointer;
 }
 
-@import "signin"
+@import "signin";
+@import "layer";
+@import "sidebar";
+@import "stCard";
+@import "containt";
+@import "wsr";
