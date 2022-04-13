@@ -27,10 +27,16 @@ a{
   text-decoration: none !important;
   cursor: pointer;
 }
-
+span.green{
+  color:green;
+}
+span.gray{
+  color:gray;
+}
 @import "signin";
 @import "layer";
 @import "sidebar";
 @import "stCard";
 @import "containt";
 @import "wsr";
+@import "charts";

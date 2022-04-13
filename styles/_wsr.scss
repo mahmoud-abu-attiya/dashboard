@@ -128,15 +128,25 @@
         svg{
           position: absolute;
           height: 80%;
-          // max-height: 100px;
+          max-height: 100px;
           left: 50%;
           top: 50%;
           transform: translate(-50%,-50%) rotate(-90deg);
+          animation: rotate 2s ;
         }
         .rate{
           text-align: center;
         }
       }
     }
+  }
+}
+
+@keyframes rotate {
+  from{
+  transform: rotateZ(0deg);
+  }
+  to{
+  transform: rotateZ(360deg);
   }
 }

@@ -1,0 +1,43 @@
+.charts{
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+  gap: 20px;
+  margin-top: 15px;
+  @media (max-width:$mobilemedia) {
+    grid-template-columns: none;
+  }
+  & > div{
+    backdrop-filter: blur(100px);
+    border-radius: 15px;
+    padding: 20px;
+  }
+}
+.progress{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  .progres{
+    &__head{
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      &__icon{
+        height: fit-content;
+        background-color: $yellowcolor;
+        padding: 3px;
+        border-radius: 5px;
+        color: $primarycolor;
+      }
+      &__address{
+  
+      }
+    }
+    .MuiLinearProgress-root{
+      border-radius: 10px;
+      width: 120%;
+      div{
+        border-radius: 10px;
+      }
+    }
+  }
+}
