@@ -14,6 +14,7 @@ export default function Home() {
       </Head>
 
         <div className="layers">
+          <div className="overlay"></div>
           <Sidebar />
           <Content />
         </div>

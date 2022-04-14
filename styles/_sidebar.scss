@@ -15,6 +15,7 @@
     padding: 15px;
     border-radius: 20px;
     backdrop-filter: blur(42px);
+    z-index: 5;
     transition: 0.3s;
     @media (max-width:$tapletmedia) {
       left: -200px;

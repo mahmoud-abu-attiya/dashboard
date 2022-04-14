@@ -11,6 +11,13 @@
     border-radius: 15px;
     padding: 20px;
   }
+  .bars-chart{
+    #chart{
+      background-color: rgba(0, 0, 0, 0.432);
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+  }
 }
 .progress{
   display: flex;
@@ -32,6 +39,7 @@
   
       }
     }
+    
     .MuiLinearProgress-root{
       border-radius: 10px;
       width: 120%;

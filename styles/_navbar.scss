@@ -1,0 +1,23 @@
+nav{
+  display: none;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  backdrop-filter: blur(42px);
+  border: 2px solid $primarycolor;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  @media (max-width:$tapletmedia) {
+    display: flex;
+  }
+  .logo{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+  }
+  button{
+    background-color: transparent;
+    color: #fff;
+  }
+}
