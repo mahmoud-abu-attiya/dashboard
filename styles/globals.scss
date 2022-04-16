@@ -29,9 +29,16 @@ a{
 }
 span.green{
   color:green;
+  font-size: 10px;
 }
 span.gray{
+  font-size: 10px;
   color:gray;
+}
+div.line{
+  width: 100%;
+  height:2px;
+  background-color: gray
 }
 @import "signin";
 @import "overlay";
@@ -42,3 +49,4 @@ span.gray{
 @import "containt";
 @import "wsr";
 @import "charts";
+@import "prover";

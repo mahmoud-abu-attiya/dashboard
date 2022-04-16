@@ -2,7 +2,7 @@
 .sidebar{
     display: flex;
     flex-direction: column;
-    height: 90vh;
+    height: calc(100vh - 40px);
     min-height: 510px;
     max-height: 800px;
     margin: 20px;

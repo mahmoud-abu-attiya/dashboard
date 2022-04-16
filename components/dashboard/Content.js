@@ -1,6 +1,7 @@
 import React from 'react'
 import ChartsContainer from './charts/ChartsContainer'
 import Navbar from './Navbar'
+import Prover from './projects/Prover'
 import StatisticCard from './StatisticCards/StatisticCard'
 import Wsr from './wsr/Wsr'
 
@@ -13,6 +14,7 @@ const Layer = () => {
         <StatisticCard />
         <Wsr />
         <ChartsContainer />
+        <Prover />
       </div>
     </main>
   )

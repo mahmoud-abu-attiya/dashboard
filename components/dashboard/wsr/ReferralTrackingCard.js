@@ -6,7 +6,7 @@ const ReferralTrackingCard = () => {
     <div className="r-card">
       <div className="head">
         <h2>Referral Tracking</h2>
-        <button>
+        <button className="three-btn">
           <DragIndicatorRoundedIcon />
         </button>
       </div>
