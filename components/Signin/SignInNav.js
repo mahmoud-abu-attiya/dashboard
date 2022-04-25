@@ -1,5 +1,3 @@
-// import Animate from 'animate.css-react'
-// import 'animate.css/animate.css'
 import { Link } from "@material-ui/core";
 import React from "react";
 import DashboardIcon from "@material-ui/icons/Dashboard";
@@ -21,13 +19,9 @@ const handelNavCancel = () => {
   let bars = document.querySelector(".media-bars");
   let cancel = document.querySelector(".media-cancel");
   let navItems = document.querySelector(".nav-items");
-  // navItems.style.display ="none"
   navItems.classList.remove("view-nav")
   cancel.classList.remove("vis");
   bars.style.display = "block";
-  // setTimeout(() => {
-  //   navItems.style.display = "none"
-  // }, 500);
 };
 
 const SignInNav = () => {
@@ -36,16 +30,16 @@ const SignInNav = () => {
       <div className="logo">&gt;_ Nees</div>
       <div className="nav-items" >
         <ul>
-          <Link href="/">
+          <Link href="/dashboard">
             <li>
               <DashboardIcon />
               Dashboard
             </li>
           </Link>
-          <Link href="/">
+          <Link href="/tables">
             <li>
               <StorageIcon />
-              Tabal
+              Table
             </li>
           </Link>
           <Link href="/">

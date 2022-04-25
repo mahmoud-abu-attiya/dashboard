@@ -41,10 +41,10 @@ const Table = () => {
           pic={photo1}
           members={
               [
-                {user: "Ahmed", img:member1},
-                {user: "Mahmoud", img:member2},
-                {user: "Mahmoud", img:member8},
-                {user: "Mahmoud", img:member9},
+                {id:1, user: "Ahmed", img:member1},
+                {id:2, user: "Mahmoud", img:member2},
+                {id:3, user: "Hady", img:member8},
+                {id:4, user: "Hossam", img:member9},
               ]
           }
           budget="14,000"
@@ -55,8 +55,8 @@ const Table = () => {
           pic={photo2}
           members={
             [
-              {user: "Ahmed", img:member3},
-              {user: "Mahmoud", img:member4}
+              {id:5, user: "Ahmed", img:member3},
+              {id:6, user: "Mahmoud", img:member4}
             ]
           }
           budget="3,000"
@@ -69,9 +69,9 @@ const Table = () => {
           pic={photo3}
           members={
             [
-              {user: "Ahmed", img:member5},
-              {user: "Mahmoud", img:member6},
-              {user: "Mahmoud", img:member10},
+              {id:7, user: "Ahmed", img:member5},
+              {id:8, user: "Mahmoud", img:member6},
+              {id:9, user: "Mahmoud", img:member10},
             ]
           }
           budget="1,000"
@@ -84,7 +84,7 @@ const Table = () => {
           pic={photo4}
           members={
             [
-              {user: "Ahmed", img:member7},
+              {id:10, user: "Ahmed", img:member7},
             ]
           }
           budget="20,500"
@@ -97,8 +97,8 @@ const Table = () => {
           pic={photo5}
           members={
             [
-              {user: "Ahmed", img:member9},
-              {user: "Mahmoud", img:member10},
+              {id:11, user: "Ahmed", img:member9},
+              {id:12, user: "Mahmoud", img:member10},
             ]
           }
           budget="$500"
@@ -111,10 +111,10 @@ const Table = () => {
           pic={photo6}
           members={
               [
-                {user: "Ahmed", img:member2},
-                {user: "Mahmoud", img:member5},
-                {user: "Ahmed", img:member3},
-                {user: "Mahmoud", img:member6},
+                {id:13, user: "Ahmed", img:member2},
+                {id:14, user: "Mahmoud", img:member5},
+                {id:15, user: "Ahmed", img:member3},
+                {id:16, user: "Mahmoud", img:member6},
               ]
           }
           budget="2,000"

@@ -5,8 +5,12 @@ import PaymentRoundedIcon from '@material-ui/icons/PaymentRounded';
 import PersonRoundedIcon from '@material-ui/icons/PersonRounded';
 import PostAddRoundedIcon from '@material-ui/icons/PostAddRounded';
 import StarRoundedIcon from '@material-ui/icons/StarRounded';
+import { useRouter } from "next/router";
+
 
 export const Sidebar = () => {
+  const router = useRouter();
+
   const handelDashClick = (e)=>{
     document.querySelectorAll(".sidebar ul li").forEach((li) => {
       li.classList.remove("dash-active")
@@ -20,20 +24,20 @@ export const Sidebar = () => {
       </div>
       <hr className="css-n4yg98"/>
       <ul>
-          <Link href="/" passHref>
-            <li onClick={handelDashClick} className="dash-active">
+          <Link href="/dashboard" passHref>
+            <li onClick={handelDashClick} className={router.pathname == "/dashboard" ? "dash-active" : ""}>
               <HomeRoundedIcon />
               Dashboard
             </li>
           </Link>
-          <Link href="/" passHref>
-            <li onClick={handelDashClick}>
+          <Link href="/tables" passHref>
+            <li onClick={handelDashClick} className={router.pathname == "/tables" ? "dash-active" : ""}>
               <StorageRoundedIcon />
-              Tabal
+              Table
             </li>
           </Link>
-          <Link href="/" passHref>
-            <li onClick={handelDashClick}>
+          <Link href="/billing" passHref>
+            <li onClick={handelDashClick} className={router.pathname == "/billing" ? "dash-active" : ""}>
               <PaymentRoundedIcon />
               Billing
             </li>

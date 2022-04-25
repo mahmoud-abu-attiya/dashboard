@@ -1,23 +1,20 @@
-import React from 'react'
-import ChartsContainer from './charts/ChartsContainer'
-import Navbar from './Navbar'
-import Prover from './projects/Prover'
-import StatisticCard from './StatisticCards/StatisticCard'
-import Wsr from './wsr/Wsr'
+import React from "react";
+import ChartsContainer from "./charts/ChartsContainer";
+// import Navbar from '../Navbar'
+import Prover from "./projects/Prover";
+import StatisticCard from "./StatisticCards/StatisticCard";
+import Wsr from "./wsr/Wsr";
+// import Layout from "../layouts/Layout";
 
-const Layer = () => {
+const Dashboard = () => {
   return (
-    <main className="dashboard">
-      <div className="sidebarOverlay"></div>
-      <div className="containt">
-        <Navbar />
-        <StatisticCard />
-        <Wsr />
-        <ChartsContainer />
-        <Prover />
-      </div>
-    </main>
-  )
-}
+    <>
+      <StatisticCard />
+      <Wsr />
+      <ChartsContainer />
+      <Prover />
+    </>
+  );
+};
 
-export default Layer
+export default Dashboard;
