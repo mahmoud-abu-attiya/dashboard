@@ -4,10 +4,17 @@
   grid-gap: 20px;
   gap: 20px;
   margin-top: 15px;
+  @media (max-width: $mobilemedia) {
+    grid-template-columns: none;
+  }
   & > div {
     backdrop-filter: blur(100px);
     border-radius: 15px;
     padding: 20px;
+    @media (max-width:$mobilemedia) {
+      font-size: 10px;
+      padding: 10px;
+    }
     .head {
       display: flex;
       justify-content: space-between;
@@ -26,30 +33,7 @@
     }
   }
   .projects {
-    table {
-      width: 100%;
-      text-align: left;
-      border-spacing: 0 2em;
-      margin-top: 20px;
-      .projects-table {
-        tr {
-          padding: 10px 0;
-          .company {
-            display: flex;
-            align-items: center;
-          }
-          .member-pic {
-            img {
-              border-radius: 50%;
-              border: 1px solid $primarycolor !important;
-            }
-            & > span:not(:first-child) {
-              margin-left: -10px !important;
-            }
-          }
-        }
-      }
-    }
+    margin: 0;
   }
   .orders {
     .order {

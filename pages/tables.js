@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Footer from '../components/Footer'
 import Layout from '../components/Layout'
 import Table from '../components/Table/Table'
 
@@ -17,6 +18,7 @@ export default function Tables() {
           <div className="sidebarOverlay"></div>
           <div className="containt">
             <Table />
+            <Footer />
           </div>
         </main>
       </Layout>

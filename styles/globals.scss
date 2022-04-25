@@ -24,7 +24,7 @@ button{
 }
 a{
   color: #fff !important;
-  text-decoration: none !important;
+  text-decoration: none ;
   cursor: pointer;
 }
 span.green{
@@ -50,3 +50,4 @@ div.line{
 @import "wsr";
 @import "charts";
 @import "prover";
+@import "table";

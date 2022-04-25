@@ -1,7 +1,31 @@
-main.dashboard{
+main.dashboard {
   display: flex;
   width: 100%;
-  .containt{
+  .containt {
     width: 100%;
+  }
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    @media (max-width: $mobilemedia) {
+      flex-direction: column;
+      height: 80px;
+      justify-content: center;
+    }
+    & div:first-child {
+      display: flex;
+      align-items: center;
+      a {
+        margin-left: 3px;
+        text-decoration: underline;
+      }
+    }
+    & div:last-child {
+      a {
+        margin: 0 20px;
+      }
+    }
   }
 }

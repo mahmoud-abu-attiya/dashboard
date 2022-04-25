@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Billing from "../components/Billing/Billing";
+import Footer from "../components/Footer";
 import Layout from "../components/Layout";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
           <div className="sidebarOverlay"></div>
           <div className="containt">
             <Billing />
+            <Footer />
           </div>
         </main>
       </Layout>
