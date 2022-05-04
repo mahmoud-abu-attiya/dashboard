@@ -43,7 +43,7 @@ export const Sidebar = () => {
             </li>
           </Link>
           <h4>ACCOUNT PAGES</h4>
-          <Link href="/signIn" passHref>
+          <Link href="/" passHref>
             <li onClick={handelDashClick}>
               <PersonRoundedIcon />
               Sign in

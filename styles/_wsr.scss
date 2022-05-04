@@ -7,7 +7,6 @@
     height: 100%;
     padding: 20px;
     border-radius: 15px;
-    // background-color: $primarycolor;
     backdrop-filter: blur(100px);
   }
   .w-card {
@@ -87,7 +86,6 @@
     .head{
       display: flex;
       justify-content: space-between;
-      // align-items: center;
       .three-btn{
         padding: 10px;
         border-radius: 10px;
@@ -109,7 +107,6 @@
         flex-direction: column;
         gap: 10px;
         .info{
-          // width: webkit-full-avilable;
           padding:10px;
           border-radius: 15px;
           background-color: $primarycolor;

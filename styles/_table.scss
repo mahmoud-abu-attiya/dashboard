@@ -10,9 +10,17 @@
     width: 100%;
     text-align: left;
     border-spacing: 0 1em;
+    @media (max-width: $mobilemedia) {
+      th:last-child {
+        display: none;
+      }
+    }
     tr {
       padding: 10px 0;
-      div {
+      @media (max-width: $mobilemedia) {
+        td:last-child {
+          display: none;
+        }
       }
       .auther {
         display: flex;
@@ -37,6 +45,11 @@
           text-align: center;
           padding: 5px 10px;
           border-radius: 7px;
+          @media (max-width: $mobilemedia) {
+            font-size: 10px;
+            width: auto;
+            padding: 3px 5px;
+          }
         }
       }
     }
@@ -74,24 +87,32 @@
     text-align: left;
     border-spacing: 0 2em;
     margin-top: 20px;
-    .projects-table {
-      tr {
-        padding: 10px 0;
-        .company {
-          display: flex;
-          align-items: center;
-          @media (max-width: $mobilemedia) {
-            font-size: 10px;
-          }
+    @media (max-width: $mobilemedia) {
+      th:last-child {
+        display: none;
+      }
+    }
+    tr {
+      padding: 10px 0;
+      @media (max-width: $mobilemedia) {
+        td:last-child {
+          display: none;
         }
-        .member-pic {
-          img {
-            border-radius: 50%;
-            border: 1px solid $primarycolor !important;
-          }
-          & > span:not(:first-child) {
-            margin-left: -10px !important;
-          }
+      }
+      .company {
+        display: flex;
+        align-items: center;
+        @media (max-width: $mobilemedia) {
+          font-size: 10px;
+        }
+      }
+      .member-pic {
+        img {
+          border-radius: 50%;
+          border: 1px solid $primarycolor !important;
+        }
+        & > span:not(:first-child) {
+          margin-left: -10px !important;
         }
       }
     }

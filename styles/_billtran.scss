@@ -1,0 +1,70 @@
+.tran, .bill{
+  backdrop-filter: blur(50px);
+  border-radius: 15px;
+  padding: 20px;
+  height: 100%;
+}
+.bill{
+  .de{
+    background-image: linear-gradient(to right, #1e1433, #32152c);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 0;
+    .head{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      h4{
+        margin-right: auto;
+      }
+      button{
+        background-color: transparent;
+        color: red;
+        display: flex;
+        align-items: center;
+      }
+      button:last-child{
+        color: #ccc;
+      }
+    }
+    .info{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+    }
+  }
+}
+.tran{
+  .head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    @media (max-width:$tapletmedia) {
+      flex-direction: column;
+      justify-content: center;
+    }
+    .date{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+  .ytr{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+    .icon{
+      padding: 7px;
+      border: 2px solid;
+      border-radius: 50%;
+      display: grid;
+      place-content: center;
+    }
+    .money{
+      margin-left: auto;
+    }
+  }
+}

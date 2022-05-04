@@ -5,6 +5,7 @@ import SignInNav from "./SignInNav"
 const signIn = () => {
   return (
     <div className="singin">
+      <div id='loading'>Loading</div>
       <SignInNav />
       <div className="left">
         <h3>INSPIRED BY THE FUTURE:</h3>
