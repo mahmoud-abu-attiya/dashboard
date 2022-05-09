@@ -8,8 +8,7 @@ const SignInFooter = () => {
       <CopyrightRoundedIcon />
       {date + " "}
       Nees developed by
-      <a href="https://google.com"> Mahmoud Abu-Attiya </a>&
-      <a href="https://google.com"> Ahmed saber</a>
+      <a href="https://www.linkedin.com/in/mahmoud-abu-attiya-978496210/"> Mahmoud Abu-Attiya </a>
     </footer>
   );
 };
